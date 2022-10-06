@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-    - nmae: checkout
+    - name: checkout
       uses: actions/checkout@v2 # $GITUB_WORKSPACE
     - name: Hello world action step
       id: hello
