@@ -1,0 +1,13 @@
+name: 'Hello world'
+description: 'greet someone and record the time'
+inputs: # Input parameters are stored as environment variables
+  who-get-greet: #id of input
+    descriptions: 'who to greet'
+    required: true
+    default: 'World'
+outputs:
+  time: #id of output
+    descriptions: 'The time we greeted you'
+  runs:
+    using: 'node12'
+    main: 'index.js'
